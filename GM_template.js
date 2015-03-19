@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        raywenderlich print
-// @namespace   webpatch@sina.com
+// @name        %name%
+// @namespace   %namespace%
 // @description %description%
-// @include     http://www.raywenderlich.com/*
+// @include     %include%
 // @exclude     %exclude%
 // @version     1
 // @grant       GM_log

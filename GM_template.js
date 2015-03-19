@@ -10,6 +10,7 @@
 // @require     https://raw.githubusercontent.com/webpatch/ScrapBookPageCleaner/master/comm.js
 // ==/UserScript==
 
+
 // The content's css selector that you want extracted it.
 // like ".article"
 let holdTag = ""

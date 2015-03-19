@@ -21,7 +21,7 @@ function cleanTags(tags) {
 function cleanTagsExclude(tagStr){
   var e = $(tagStr)
   if (e.parent()[0].tagName != "BODY")  {
-    e.parent().siblings().each(
+    e.siblings().each(
       function(){
         if (this.tagName != "SCRIPT" && this.tagName != "LINK")
         {

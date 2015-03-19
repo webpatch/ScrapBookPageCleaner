@@ -18,25 +18,23 @@ function cleanTags(tags) {
   }
 }
 
-function cleanTagsExclude(tagStr){
-  var e = $(tagStr)
-  if (e.parent()[0].tagName != "BODY")  {
-    e.siblings().each(
-      function(){
-        if (this.tagName != "SCRIPT" && this.tagName != "LINK")
-        {
-          $(this).remove()
-        }
+function cleanTagsExclude(e){
+  if (e[0].tagName == "BODY") return; 
+  e.siblings().each(
+    function(){
+      var name = this.tagName
+      if (name != "SCRIPT" && name != "LINK")
+      {
+        $(this).remove()
       }
-    )
-    
-    cleanTagsExclude(e.parent())
-  }
+    }
+  )
+  cleanTagsExclude(e.parent())
 }
 
 function setup()
 {
-  cleanTagsExclude(holdTag);
+  cleanTagsExclude($(holdTag));
   cleanTags(removeTags);
   insertCSS(css.getMultilines());
 }

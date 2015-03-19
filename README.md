@@ -1,12 +1,12 @@
-# ScrapBookPageCleaner
+# 网页内容清理工
 
 需要：Firefox浏览器 、Greasemonkey 插件
 
 ##功能
 
-1. 智能剔除非主要内容的标签
-2. 可指定需要批量删除的标签
-3. 可自定义内容的样式
+1. 智能剔除网页中非主要内容的HTML标签
+2. 可指定需要批量删除的HTML标签
+3. 可自定义添加网页样式(CSS)
 
 ##安装`Greasemonkey`插件
 https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/

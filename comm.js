@@ -10,7 +10,7 @@ function insertCSS (cssText) {
   a.href = "data:text/css,"+encodeURIComponent(cssText)
   document.getElementsByTagName("head")[0].appendChild(a)
 }
-alert('test')
+
 function cleanTags(tags) {
   for each (i in tags)
   {

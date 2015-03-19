@@ -1,6 +1,15 @@
 # ScrapBookPageCleaner
-####`Greasemonkey`插件
-####设置
+
+##功能
+
+1. 智能剔除非主要内容的标签
+2. 可指定需要批量删除的标签
+3. 可自定义内容的样式
+
+##安装`Greasemonkey`插件
+https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/
+
+##设置`Greasemonkey`插件
 点击Greasemonkey图标 -> Greasemonkey选项 -> 新建脚本模板（粘贴入下面代码）
 ```
 // ==UserScript==

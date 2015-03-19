@@ -1,5 +1,7 @@
 # ScrapBookPageCleaner
 
+需要：Firefox浏览器 、Greasemonkey 插件
+
 ##功能
 
 1. 智能剔除非主要内容的标签

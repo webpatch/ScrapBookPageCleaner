@@ -7,8 +7,6 @@ Clear extra HTML elements, leaving only the main contents of the article, and th
 
 Software: `Firefox`,`Greasemonkey` addon
 
-Skill: `HTML`,`CSS`
-
 ##Main feature
 
 1. Automatic remove redundant HTML tags by assigned the hold tag
@@ -28,6 +26,6 @@ Download the following script, drag the "js" file to firefox, install it!
 
 > Remember to reload the web page when you have installed or actived /deactived a script.
 
-###Add other site for support  
+##Add other site for support
 
 [ How to add other site for support?  ](https://github.com/webpatch/Web-Page-Cleaner/wiki/Add-other-site-to-support/_edit)

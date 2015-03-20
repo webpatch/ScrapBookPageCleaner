@@ -5,7 +5,8 @@
 // @include     http://www.justinyan.me/post/*
 // @include     http://onevcat.com/*
 // @include     http://blog.devtang.com/blog/
-// @version     3
+// @include     http://hikiny.com
+// @version     4
 // @grant       none
 // @require     https://code.jquery.com/jquery-1.7.2.min.js
 // @downloadURL https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js

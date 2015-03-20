@@ -26,6 +26,7 @@ https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 [ 下载用户脚本](https://github.com/webpatch/Web-Page-Cleaner/tree/master/user%20script)
 
 > 新装、激活、取消激活脚本时，记得重新加载下页面，方可生效！
+
 ###添加其它站点支持
 ####设置脚本模板
 点击Greasemonkey图标 -> Greasemonkey选项 

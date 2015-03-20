@@ -1,12 +1,11 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        Web page cleaner
 // @namespace   webpatch@sina.com
 // @include     http://www.cocoachina.com/*
 // @include     http://www.justinyan.me/post/*
 // @include     http://onevcat.com/*
 // @include     http://blog.devtang.com/blog/
-// @include     http://hikiny.com
-// @version     4
+// @version     1
 // @grant       none
 // @require     https://code.jquery.com/jquery-1.7.2.min.js
 // @downloadURL https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js
@@ -45,12 +44,12 @@ function cleanTagsExclude(e){
 
 
 var rules = [
-	{
-		"site":"http://www.cocoachina.com/*",
-		"hold":".detail-main",
-		"delete":["#comiframe",".part-wrap",".wx_article",".crumbs",".tgbox",".article-prev",".article-next","#zanbox"],
-		"css":".middle,.detail-left{width: auto !important;}.float-l{float: inherit}.info-detail, .detail-left{padding: 0;}.detail-left .detail-main{background-color:#fff;border: none}"
-	},
+  {
+    "site":"http://www.cocoachina.com/*",
+    "hold":".detail-main",
+    "delete":["#comiframe",".part-wrap",".wx_article",".crumbs",".tgbox",".article-prev",".article-next","#zanbox"],
+    "css":".middle,.detail-left{width: auto !important;}.float-l{float: inherit}.info-detail, .detail-left{padding: 0;}.detail-left .detail-main{background-color:#fff;border: none}"
+  },
   {
     "site":"http://www.justinyan.me/post/*",
     "hold":"article",

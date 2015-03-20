@@ -28,4 +28,4 @@ Download the following script, drag the "js" file to firefox, install it!
 
 ##Add other site for support
 
-[ How to add other site for support?  ](https://github.com/webpatch/Web-Page-Cleaner/wiki/Add-other-site-to-support/_edit)
+[ How to add other site for support?  ](https://github.com/webpatch/Web-Page-Cleaner/wiki/Add-other-site-to-support)

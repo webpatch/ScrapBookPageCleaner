@@ -26,6 +26,6 @@ https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 
 > 新装、激活、取消激活脚本时，记得重新加载下页面，方可生效！
 
-###添加其它站点支持
+##添加其它站点支持
 
 [如何添加其它站点支持](https://github.com/webpatch/Web-Page-Cleaner/wiki/%E6%B7%BB%E5%8A%A0%E5%85%B6%E5%AE%83%E7%AB%99%E7%82%B9%E6%94%AF%E6%8C%81)

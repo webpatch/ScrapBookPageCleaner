@@ -1,4 +1,4 @@
-# Web Page Cleaner
+# Web Page Cleaner  [中文介绍](https://github.com/webpatch/Web-Page-Cleaner/blob/master/README_CN.md)
 Clear extra HTML elements, leaving only the main contents of the article, and through custom CSS style for better reading experience.
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_preview.gif)
@@ -19,7 +19,7 @@ Skill: `HTML`,`CSS`
 ###Install Greasemonkey
 https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 
-###Set Template
+###Set script template
 Click Greasemonkey Icon -> Greasemonkey options 
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_1.png)
@@ -81,7 +81,7 @@ Input the name ,modify "includes" - that's which pages you want this script to a
 All you have to do is modify the three variables, and it will change the page's appearance.
 
 |variables|type|description|
-|-|-|-|
+|---|---|---|
 |`holdTag`|string|The article's container tag selector|
 |`removeTags`|string array|The container's tag selectors that need to be removed|
 |`css`|multi-line string|custom css text <br><b>Warning: Don't delete `/* */`<b>|

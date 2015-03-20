@@ -3,7 +3,8 @@
 // @namespace   webpatch@sina.com
 // @include     http://www.cocoachina.com/*
 // @include     http://www.justinyan.me/post/*
-// @version     1
+// @include     http://onevcat.com/*
+// @version     2
 // @grant       none
 // @require     https://code.jquery.com/jquery-1.7.2.min.js
 // @downloadURL https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js

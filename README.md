@@ -1,32 +1,34 @@
-# 网文清理工
-清除网页中多余的元素，只保留文章的主要内容，并通过自定义样式获得更佳的阅读体验。
+# Web Page Cleaner
+Clear extra HTML elements, leaving only the main contents of the article, and through custom CSS style for better reading experience.
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/preview.gif)
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_preview.gif)
 
-##需要
-软件：Firefox浏览器 、Greasemonkey 插件  
-技能：HTML、CSS基础知识
+##Require
 
-##主要功能
+Software: `Firefox`,`Greasemonkey` addon
 
-1. 智能剔除网页中非主要内容的HTML标签
-2. 可指定需要批量删除的HTML标签
-3. 可自定义添加网页样式(CSS)
+Skill: `HTML`,`CSS`
 
-##如何使用？
-###安装 Greasemonkey 插件
-https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
+##Main feature
 
-###设置模板
-点击Greasemonkey图标 -> Greasemonkey选项 
+1. Automatic remove redundant HTML tags by assigned the hold tag
+2. Batch remove the assigned HTML tags
+3. Inject custom CSS
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/1.png)
+##How to use？
+###Install Greasemonkey
+https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 
-修改“新建脚本模板”内容
+###Set Template
+Click Greasemonkey Icon -> Greasemonkey options 
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/3.png)
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_1.png)
 
-粘贴入下面代码，确定
+modify the content of “New script template” 
+
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_3.png)
+
+Paste the following code. Confirm
 ```
 // ==UserScript==
 // @name        %name%
@@ -40,51 +42,54 @@ https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 // @require     https://raw.githubusercontent.com/webpatch/ScrapBookPageCleaner/master/comm.js
 // ==/UserScript==
 
-// 需要提取内容容器的css选择器
-// 如 ".article"
+
+// The content's css selector that you want extracted it.
+// like ".article"
 let holdTag = ""
 
-// 需要删除的容器的css选择器
+
+// The tags selector that you want to remove. 
 let removeTags = [
   
 ];
 
-// 需要注入的自定义css代码
-// /* 及 */ 不可删除
+
+// Inject custom css style
 let css = function(){  
 /* 
   
 */
 };
 
-// 开始注入
+// start injection
 setup();
 ```
-###新建脚本
-点击Greasemonkey图标 -> 新建用户脚本
+###Create new script
+Click the Greasemonkey Icon -> new user script
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/1.png)
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_1.png)
 
-填入名称 (任意)，修改“脚本应用到（每条一行）”，设置需要应用该脚本的页面。可使用通配符`*`，及正则表达式
+Input the name ,modify "includes" - that's which pages you want this script to apply . You can use wildcard `*` or regular expression.
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/4.png)
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_4.png)
 
-###修改脚本变量
-根据需要修改`holdTag`、`removeTags`、`css`变量，可任意组合。
+###Modify variables 
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/2.png)
+![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_2.png)
 
-####变量说明
+####Variables description
+All you have to do is modify the three variables, and it will change the page's appearance.
 
-|变量|变量类型|说明|
+|variables|type|description|
 |-|-|-|
-|`holdTag`|字符串类型|需要提取内容的容器选择器|
-|`removeTags`|字符串数组|需要删除的容器选择器|
-|`css`|多行文本|自定义的css文本，注意不能删除`/* */`注释符|
+|`holdTag`|string|The article's container tag selector|
+|`removeTags`|string array|The container's tag selectors that need to be removed|
+|`css`|multi-line string|custom css text <br><b>Warning: Don't delete `/* */`<b>|
 
-> 以上选择器都基于jQuery
+> All tag selector based on jQuery
 
-####例子
+####Example
+
 ```
 let holdTag = ".article"
 let removeTags = [
@@ -98,5 +103,5 @@ let css = function(){
 */
 };
 ```
-保存，然后刷新当前网页
+Save, and reload the web page.
 

@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name        cocoachina.com print
 // @namespace   webpatch@sina.com
 // @include     /^http://www\.cocoachina\.com/\S+/\d+/.*/

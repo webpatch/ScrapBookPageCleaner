@@ -17,7 +17,17 @@
 ###安装 Greasemonkey 插件
 https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 
-###设置脚本模板
+###安装脚本
+
+我已经制作了一些脚本例子，并且会持续添加、更新。如果找不到你所需要的脚本，你可自己动手制作。很简单，仅需几分钟就能完成一个。具体请参考：**“添加其它站点支持”**
+
+下载下列脚本, 拖拽已下载完成的js文件至火狐浏览器内，点击安装!
+
+[ 下载用户脚本](https://github.com/webpatch/Web-Page-Cleaner/tree/master/user%20script)
+
+> 新装、激活、取消激活脚本时，记得重新加载下页面，方可生效！
+###添加其它站点支持
+####设置脚本模板
 点击Greasemonkey图标 -> Greasemonkey选项 
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/1.png)
@@ -60,7 +70,7 @@ let css = function(){
 // 开始注入
 setup();
 ```
-###新建脚本
+####新建脚本
 点击Greasemonkey图标 -> 新建用户脚本
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/1.png)
@@ -69,12 +79,12 @@ setup();
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/4.png)
 
-###修改脚本变量
+####修改脚本变量
 根据需要修改`holdTag`、`removeTags`、`css`变量，可任意组合。
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/2.png)
 
-####变量说明
+#####变量说明
 
 |变量|变量类型|说明|
 |---|---|---|
@@ -84,7 +94,7 @@ setup();
 
 > 以上选择器都基于jQuery
 
-####例子
+#####例子
 ```
 let holdTag = ".article"
 let removeTags = [
@@ -99,4 +109,5 @@ let css = function(){
 };
 ```
 保存，然后刷新当前网页
+
 

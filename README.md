@@ -19,7 +19,18 @@ Skill: `HTML`,`CSS`
 ###Install Greasemonkey
 https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 
-###Set script template
+###Install Script
+I've made some script examples, and I will continue to add and update. If you can't find the script you need, you can make one by yourself. It's very simple, just take a few minutes. Please refer to **Add other site to support** entry .
+
+Download the following script, drag the "js" file to firefox, install it!
+
+[ Download user scripts ](https://github.com/webpatch/Web-Page-Cleaner/tree/master/user%20script)
+
+> Remember to reload the web page when you have installed or actived /deactived a script.
+
+###Add other site to support  
+
+####Set script template
 Click Greasemonkey Icon -> Greasemonkey options 
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_1.png)
@@ -64,7 +75,7 @@ let css = function(){
 // start injection
 setup();
 ```
-###Create new script
+####Create new script
 Click the Greasemonkey Icon -> new user script
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_1.png)
@@ -73,11 +84,11 @@ Input the name ,modify "includes" - that's which pages you want this script to a
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_4.png)
 
-###Modify variables 
+####Modify variables 
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_2.png)
 
-####Variables description
+#####Variables description
 All you have to do is modify the three variables, and it will change the page's appearance.
 
 |variables|type|description|
@@ -88,7 +99,7 @@ All you have to do is modify the three variables, and it will change the page's 
 
 > All tag selector based on jQuery
 
-####Example
+#####Example
 
 ```
 let holdTag = ".article"
@@ -104,4 +115,5 @@ let css = function(){
 };
 ```
 Save, and reload the web page.
+
 

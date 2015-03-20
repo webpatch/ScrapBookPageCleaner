@@ -17,7 +17,7 @@
 ###安装 Greasemonkey 插件
 https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 
-###设置模板
+###设置脚本模板
 点击Greasemonkey图标 -> Greasemonkey选项 
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/1.png)
@@ -77,7 +77,7 @@ setup();
 ####变量说明
 
 |变量|变量类型|说明|
-|-|-|-|
+|---|---|---|
 |`holdTag`|字符串类型|需要提取内容的容器选择器|
 |`removeTags`|字符串数组|需要删除的容器选择器|
 |`css`|多行文本|自定义的css文本，注意不能删除`/* */`注释符|

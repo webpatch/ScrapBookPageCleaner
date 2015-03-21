@@ -45,11 +45,18 @@ function cleanTagsExclude(e){
   cleanTagsExclude(tag.parent());
 }
 
-$.get("https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/rules.txt",function(data){
-  var rules = JSON.parse(data)
-  console.log(rules)
+$.get("",function(data){
+  
 })
 
+GM_xmlhttpRequest({
+  method: "GET",
+  url: "https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/rules.txt",
+  onload: function(response) {
+    var rules = JSON.parse(data)
+    alert(rules)
+  }
+});
 
 
 var href = window.location.href;

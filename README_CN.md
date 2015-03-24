@@ -18,11 +18,9 @@ https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
 
 ###安装脚本
 
-我已经制作了一些脚本例子，并且会持续添加、更新。如果找不到你所需要的脚本，你可自己动手制作。很简单，仅需几分钟就能完成一个。具体请参考：**“添加其它站点支持”**
+点击下面链接安装脚本!
 
-下载下列脚本, 拖拽已下载完成的js文件至火狐浏览器内，点击安装!
-
-[ 下载用户脚本](https://github.com/webpatch/Web-Page-Cleaner/tree/master/user%20script)
+[安装用户脚本](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js)
 
 > 新装、激活、取消激活脚本时，记得重新加载下页面，方可生效！
 

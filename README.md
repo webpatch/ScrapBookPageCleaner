@@ -18,11 +18,10 @@ Software: `Firefox`,`Greasemonkey` addon
 https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 
 ###Install Script
-I've made some script examples, and I will continue to add and update. If you can't find the script you need, you can make one by yourself. It's very simple, just take a few minutes. Please refer to **Add other site for support** entry .
 
-Download the following script, drag the "js" file to firefox, install it!
+Click the link,install it!
 
-[ Download user scripts ](https://github.com/webpatch/Web-Page-Cleaner/tree/master/user%20script)
+[ Install user scripts ](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js)
 
 > Remember to reload the web page when you have installed or actived /deactived a script.
 

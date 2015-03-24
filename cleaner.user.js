@@ -1,13 +1,13 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name        Web page cleaner
 // @namespace   webpatch@sina.com
 // @include     http://www.cocoachina.com/*
 // @include     http://www.justinyan.me/post/*
 // @include     http://onevcat.com/*
 // @include     http://blog.devtang.com/blog/
-// @include     http://hikiny.com
 // @version     1
-// @grant       none
+// @grant       GM_log
+// @grant       GM_xmlhttpRequest
 // @require     https://code.jquery.com/jquery-1.7.2.min.js
 // @downloadURL https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js
 // @updateURL   https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.meta.js
@@ -45,29 +45,23 @@ function cleanTagsExclude(e){
   cleanTagsExclude(tag.parent());
 }
 
-$.get("",function(data){
-  
-})
-
 GM_xmlhttpRequest({
   method: "GET",
   url: "https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/rules.txt",
   onload: function(response) {
-    var rules = JSON.parse(data)
-    alert(rules)
+    var rules = JSON.parse(response.responseText)
+    var href = window.location.href;
+    for each (r in rules)
+    {
+      var reg = new RegExp(r["site"])
+      if (reg.test(href) !== false)
+      {
+        cleanTagsExclude(r["hold"])
+        insertCSS(r["css"])
+        cleanTags(r["delete"])
+        break;
+      }
+    }
   }
 });
 
-
-var href = window.location.href;
-for each (r in rules)
-{
-  var reg = new RegExp(r["site"])
-  if (reg.test(href) !== false)
-  {
-    cleanTagsExclude(r["hold"])
-    insertCSS(r["css"])
-    cleanTags(r["delete"])
-    break;
-  }
-}

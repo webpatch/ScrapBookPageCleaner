@@ -1,5 +1,5 @@
 # Web Page Cleaner  [中文介绍](https://github.com/webpatch/Web-Page-Cleaner/blob/master/README_CN.md)
-Clear extra HTML elements, leaving only the main contents of the article, and through custom CSS style for better reading experience.
+Remove page's extra elements, only leaving  the main contents of the article, and through custom CSS style to get better reading experience.
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_preview.gif)
 

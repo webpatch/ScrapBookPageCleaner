@@ -34,19 +34,9 @@ self.port.on("drawBorder", function(rules) {
 	applyRules(rules);
 });
 
-function applyRules(rules)
+function applyRules(r)
 {
-  // console.log(rules);
-  var href = window.location.href;
-  for each (r in rules)
-  {
-    var reg = new RegExp(r["site"])
-    if (reg.test(href) !== false)
-    {
-      cleanTagsExclude(r["hold"])
-      insertCSS(r["css"])
-      cleanTags(r["delete"])
-      break;
-    }
-  }
+  cleanTagsExclude(r["hold"])
+  insertCSS(r["css"])
+  cleanTags(r["delete"])
 }

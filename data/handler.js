@@ -40,3 +40,8 @@ function applyRules(r)
   insertCSS(r["css"])
   cleanTags(r["delete"])
 }
+
+function killErrors() {
+  return true;
+}
+window.onerror = killErrors; 

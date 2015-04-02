@@ -1,6 +1,7 @@
 this.$ = this.jQuery = jQuery.noConflict(true);
 
 function insertCSS (cssText) {
+  if(!cssText) return ;
   var a = document.createElement("link");
   a.rel = "stylesheet";
   a.href = "data:text/css,"+encodeURIComponent(cssText);
@@ -8,6 +9,7 @@ function insertCSS (cssText) {
 }
 
 function cleanTags(tags) {
+  if(!tags) return ;
   for each (i in tags)
   {
     $(i).remove();
@@ -15,7 +17,7 @@ function cleanTags(tags) {
 }
 
 function cleanTagsExclude(e){
-  if(e == undefined) return ;
+  if(!e) return ;
   var tag = $(e);
   if (tag[0].tagName == "BODY") return; 
   tag.siblings().each(
@@ -30,7 +32,7 @@ function cleanTagsExclude(e){
   cleanTagsExclude(tag.parent());
 }
 
-self.port.on("drawBorder", function(rules) {
+self.port.on("APPLY_RULES", function(rules) {
 	applyRules(rules);
 });
 

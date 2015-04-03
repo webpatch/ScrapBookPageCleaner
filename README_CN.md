@@ -1,10 +1,10 @@
-# 网文自动清理器
-自动清除网页中多余的元素，只保留文章的主要内容，并通过自定义样式获得更佳的阅读体验。
+# 网文自动清理器插件
+自动清除网页中多余的元素，并通过自定义样式获得更佳的阅读体验。
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/preview.gif)
 
 ##需要
-软件：Firefox浏览器 、Greasemonkey 插件  
+Firefox 30+ 
 
 ##主要功能
 
@@ -13,16 +13,7 @@
 3. 可自定义添加网页样式(CSS)
 
 ##如何使用？
-###安装 Greasemonkey 插件
-https://addons.mozilla.org/zh-cn/firefox/addon/greasemonkey/
-
-###安装脚本
-
-点击下面链接安装脚本!
-
-[安装用户脚本](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js)
-
-> 新装、激活、取消激活脚本时，记得重新加载下页面，方可生效！
+[点击安装Firefox插件](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.0/page-cleaner.xpi)
 
 ##添加其它站点支持
 

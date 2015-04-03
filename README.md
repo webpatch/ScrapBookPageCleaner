@@ -1,11 +1,11 @@
-# Web Page Cleaner  [中文介绍](https://github.com/webpatch/Web-Page-Cleaner/blob/master/README_CN.md)
-Remove page's extra elements, only leaving  the main contents of the article, and through custom CSS style to get better reading experience.
+# Webpage Cleaner Extesion  [中文介绍](https://github.com/webpatch/Web-Page-Cleaner/blob/master/README_CN.md)
+The goal is to remove the page's extra elements and through custom CSS style to get better reading experience.
 
 ![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_preview.gif)
 
 ##Require
 
-Software: `Firefox`,`Greasemonkey` addon
+Firefox 30+
 
 ##Main feature
 
@@ -14,17 +14,9 @@ Software: `Firefox`,`Greasemonkey` addon
 3. Inject custom CSS
 
 ##How to use？
-###Install Greasemonkey
-https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
-
-###Install Script
-
-Click the link,install it!
-
-[ Install user scripts ](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/cleaner.user.js)
-
-> Remember to reload the web page when you have installed or actived /deactived a script.
+[Click to install Firefox Extesion](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.0/page-cleaner.xpi)
 
 ##Add other site for support
 
 [ How to add other site for support?  ](https://github.com/webpatch/Web-Page-Cleaner/wiki/Add-other-site-to-support)
+

@@ -28,7 +28,7 @@ function cleanTagsExclude(e){
         $(this).remove();
       }
     }
-  )
+  );
   cleanTagsExclude(tag.parent());
 }
 
@@ -38,9 +38,9 @@ self.port.on("APPLY_RULES", function(rules) {
 
 function applyRules(r)
 {
-  cleanTagsExclude(r["hold"])
-  insertCSS(r["css"])
-  cleanTags(r["delete"])
+  cleanTagsExclude(r["hold"]);
+  insertCSS(r["css"]);
+  cleanTags(r["delete"]);
 }
 
 function killErrors() {

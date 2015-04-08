@@ -14,7 +14,7 @@ Firefox 30+
 3. Inject custom CSS
 
 ##How to use？
-[Click to install Firefox Extesion](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.0/page-cleaner.xpi)
+[Click to install Firefox Extesion](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.1/page-cleaner-v1.1.xpi)
 
 ##Add other site for support
 

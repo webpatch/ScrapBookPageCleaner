@@ -1,7 +1,7 @@
 # 网文自动清理器插件
 自动清除网页中多余的元素，并通过自定义样式获得更佳的阅读体验。
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/preview.gif)
+![preview](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/preview.gif)
 
 ##需要
 Firefox 30+ 
@@ -13,7 +13,7 @@ Firefox 30+
 3. 可自定义添加网页样式(CSS)
 
 ##如何使用？
-[点击安装Firefox插件](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.0/page-cleaner.xpi)
+[点击安装Firefox插件](https://github.com/webpatch/Web-Page-Cleaner/releases/download/v1.1/page-cleaner-v1.1.xpi)
 
 ##添加其它站点支持
 

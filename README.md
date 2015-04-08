@@ -1,7 +1,7 @@
 # Webpage Cleaner Extesion  [中文介绍](https://github.com/webpatch/Web-Page-Cleaner/blob/master/README_CN.md)
 The goal is to remove the page's extra elements and through custom CSS style to get better reading experience.
 
-![enter image description here](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/e_preview.gif)
+![preview](https://raw.githubusercontent.com/webpatch/Web-Page-Cleaner/master/screenshot/preview.gif)
 
 ##Require
 

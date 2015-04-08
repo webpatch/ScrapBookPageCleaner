@@ -1,5 +1,5 @@
 {
-  "version":1,
+  "version":2,
   "expire":6,
   "rules":[
     {
@@ -13,7 +13,8 @@
         ".tgbox",
         ".article-prev",
         ".article-next",
-        "#zanbox"
+        "#zanbox",
+        ".adsbox"
       ],
       "css": ".middle,.detail-left{width: auto !important;}.float-l{float: inherit}.info-detail, .detail-left{padding: 0;}.detail-left .detail-main{background-color:#fff;border: none}"
     },

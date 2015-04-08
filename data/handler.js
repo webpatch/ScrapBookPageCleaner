@@ -41,6 +41,8 @@ function applyRules(r)
   cleanTagsExclude(r["hold"]);
   insertCSS(r["css"]);
   cleanTags(r["delete"]);
+
+  //$("body").css({"max-width":"950px","width":"90%","margin":"0 auto"})
 }
 
 function killErrors() {

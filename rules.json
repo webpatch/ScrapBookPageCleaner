@@ -52,6 +52,92 @@
         ".social-links"
       ],
       "css": "article{border:0;}html{background:#fff}#main{padding:0}.wrapper{max-width:inherit;width:auto;}article:hover, .rw-module:hover{box-shadow:none;}#primary-container,#primary{margin:0;float:none;}"
-    }
+    },
+    {
+    "site":"^.*\\.jobbole\\.com\/\\d+/",
+    "hold":".post",
+    "delete":[
+      ".textwidget",
+      ".copyright-area",
+      ".entry-meta",
+      ".imooc",
+      ".jiathis_style_24x24",
+      "#author-bio"
+    ],
+    "css":".grid-8{float:none;margin:0;width:inherit;}.container{width:inherit;}"
+  },
+  {
+    "site":"http://www.objc.io/*",
+    "hold":"article",
+    "delete":[
+      ".issue-link",
+      ".post-author"
+    ],
+    "css":".article{max-width: 100%;padding:2em;}"
+  },
+  {
+    "site":"http://objccn.io/*",
+    "delete":[
+      "#at_header",
+      "#at_footer",
+      ".at_author",
+      ".at_post_share",
+      ".at_post_content+h3"
+    ],
+    "css":".row{max-width:100%;}"
+  },
+  {
+    "site":"^http://nshipster.com/\\S+/",
+    "hold":"article",
+    "delete":[
+      "footer"
+    ],
+    "css":"[role='container']{max-width:100%;}.st-search-launcher{display:none;}"
+  },
+  {
+    "site":"^http://nshipster.cn/\\S+/",
+    "hold":"article",
+    "delete":[
+      "footer"
+    ],
+    "css":"[role='container']{max-width:100%;}.st-search-launcher{display:none;}"
+  },
+  {
+    "site":"^https://www.bignerdranch.com/blog/\\S+/",
+    "delete":[
+      "header.nav-skin-top-header",
+      "footer",
+      ".l-container.u-tac.l-padding-bottom",
+      ".bg-fence-border-tile",
+      "main section:nth-last-child(2)",
+      ".list-c-social-blog",
+      ".blog-t-category",
+      ".blog-post-l-container"
+    ],
+    "css":".l-shift-grid, .blog-post-l-container, .media-l-container{margin-left:0;width:inherit;}"
+  },
+  {
+    "site":"^http://security.ios-wiki.com/\\S+/",
+    "delete":[
+      "#at_header",
+      "#at_footer",
+      ".at_author",
+      ".at_post_share",
+      ".at_post_content+h3"
+    ],
+    "css":".row{max-width:100%;}"
+  },
+  {
+    "site":"^http://blog.csdn.net/\\S+/.*",
+    "hold":"#article_details",
+    "delete":[
+      ".bdsharebuttonbox",
+      ".article_next_prev",
+      "#digg",
+      ".article_manage",
+      ".tag2box"
+    ],
+    "css":"#main,#main .main{width:inherit;max-width:100%; border:0;padding: 0;margin:0;}body{background-image:none;background-color:#fff}#body{width:100%;max-width:100%;padding: 0;margin:0;border:0;}"
+  }
   ]
 }

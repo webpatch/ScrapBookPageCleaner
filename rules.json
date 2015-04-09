@@ -1,5 +1,5 @@
 {
-  "version":3,
+  "version":4,
   "expire":6,
   "rules":[
     {
@@ -41,7 +41,8 @@
       "site": "http://blog.devtang.com/blog/*",
       "hold": "article.hentry",
       "delete": [
-        "footer"
+        "footer",
+        "p.meta"
       ],
       "css": "#content{margin:0}body{max-width:inherit}body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section{padding:2em}"
     },
@@ -138,6 +139,19 @@
       ".tag2box"
     ],
     "css":"#main,#main .main{width:inherit;max-width:100%; border:0;padding: 0;margin:0;}body{background-image:none;background-color:#fff}#body{width:100%;max-width:100%;padding: 0;margin:0;border:0;}"
+  },
+  {
+    "site":"http://www.jianshu.com/p/*",
+    "hold":".article",
+    "css":".output{padding:0;}.container{width:auto !important;}.post .container .article{padding:2em;}"
+  },
+  {
+    "site":"http://www.onevcat.com/*",
+    "hold":"article",
+    "delete":[
+      ".post-meta"
+    ],
+    "css":".content-wrapper {width:auto;margin:0;}.content-wrapper__inner{margin:0;padding:2em;}"
   }
   ]
 }

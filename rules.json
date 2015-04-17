@@ -1,5 +1,5 @@
 {
-  "version":4,
+  "version":5,
   "expire":6,
   "rules":[
     {
@@ -152,6 +152,15 @@
       ".post-meta"
     ],
     "css":".content-wrapper {width:auto;margin:0;}.content-wrapper__inner{margin:0;padding:2em;}"
+  },
+  {
+    "site": "http://southpeak.github.io/blog/*",
+    "hold": "article.hentry",
+    "delete": [
+      "footer",
+      "p.meta"
+    ],
+    "css": "#content{margin:0}body{max-width:inherit}body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section{padding:2em}"
   }
   ]
 }

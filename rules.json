@@ -1,5 +1,5 @@
 {
-  "version":5,
+  "version":6,
   "expire":6,
   "rules":[
     {
@@ -161,6 +161,46 @@
       "p.meta"
     ],
     "css": "#content{margin:0}body{max-width:inherit}body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section{padding:2em}"
-  }
+  },
+  {
+      "site": "http://southpeak.github.io/blog/*",
+      "hold": "article.hentry",
+      "delete": [
+        "footer",
+        "p.meta"
+      ],
+      "css": "#content{margin:0}body{max-width:inherit}body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section{padding:2em}"
+    },
+    {
+      "site": "http://foggry.com/blog/*",
+      "hold": "article.hentry",
+      "delete": [
+        "footer",
+        "p.meta"
+      ],
+      "css": "#content{margin:0}body{max-width:inherit}body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section{padding:2em}"
+    },
+    {
+      "site": "http://tutuge.me/*",
+      "hold": "article.article-type-post",
+      "delete":[
+        ".article-meta",
+        "#article-nav"
+      ],
+      "css": "#main{width:auto;float:none;margin:0}.article{margin:1em}"
+    },
+    {
+      "site": "http://limboy.me/*",
+      "hold": "#content",
+      "delete":[
+        "#disqus_thread"
+      ],
+      "css": "div#wrapper{border-radius:0;width:auto;margin:0}pre{width:auto;margin:0}"
+    },
+    {
+      "site": "http://lincode.github.io/*",
+      "hold": "div.entry",
+      "css": "div.entry,#content{width:auto;margin:0}"
+    }
   ]
 }
